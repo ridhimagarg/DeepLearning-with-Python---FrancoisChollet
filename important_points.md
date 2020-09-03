@@ -24,3 +24,7 @@
      - Automates crucial steps of ML: feature engineering
 
 ### Two essential characteristics of DL 
+
+    - Incremental learning, layer by layer way in which increasing complex respresentation
+    - Intermediate incrementaal respresentations(weights) are learned jointly.
+
