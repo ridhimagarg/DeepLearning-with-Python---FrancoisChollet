@@ -27,4 +27,23 @@
 
     - Incremental learning, layer by layer way in which increasing complex respresentation
     - Intermediate incrementaal respresentations(weights) are learned jointly.
+    - With joint feature learning, whenever one of its feature adjusts then all other related features updated automatically.
+
+### Wave of Investment
+
+    - In 2013, Google acquire DeepMind in $500 million, one of the biggest acquistion in history.
+
+## Chapter 2
+
+### Convention for shape of images
+
+    - Channel-Last convention used by Tensorflow.
+    - Channel-first convention used by Theano
+
+### BroadCasting
+
+    - Axes are added to the smaller tensor will be broadcasted to the larger tensor
+    - Smaller tensor is repeated alongside these new axes  to match the ndim of larger tensor.
+
+###
 
