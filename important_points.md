@@ -45,5 +45,25 @@
     - Axes are added to the smaller tensor will be broadcasted to the larger tensor
     - Smaller tensor is repeated alongside these new axes  to match the ndim of larger tensor.
 
-###
+### Analogy: How DL works?
+
+    - Each layer in deep NN applies a transformation which disentangles the data little more. 
+
+### Derivative
+    
+    - Continuity: A small change in x will result a small change in y - intiution behind continiuity.
+    
+### Stochastic Gradient Descent
+
+    - Compute the loss (pred- actual)
+    - Derivative of loss with parameters(W's)
+    - Move parameter (w) little bit in opposite direction of gradient which helps in reducing loss
+              w(t+1) = w(t) - step_size * grad(loss w.r.t. w) 
+
+### Prefect Analogy: SGD + momentum
+
+    - It could happen that there is ball on hill which could stuck at local minima instead of global minima. 
+    If ball will have enough momentum then it will not stuck at local minima. Momentum is implemented based not only on current slope(accln) but also the velocity (resulting from past accln). 
+    Similarly in SGD+momentum, parameter will be updated based on current gradient and previous parameter update.
+
 
