@@ -83,4 +83,4 @@
 
 ### Tip for small training dataset
 
-    - If
+    - If small no. of training data then we should choose small networks with few layers and neurons to avoid severe overfitting.
