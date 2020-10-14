@@ -66,4 +66,21 @@
     If ball will have enough momentum then it will not stuck at local minima. Momentum is implemented based not only on current slope(accln) but also the velocity (resulting from past accln). 
     Similarly in SGD+momentum, parameter will be updated based on current gradient and previous parameter update.
 
+## Chapter 3
 
+### Choose no. of neurons in layers
+
+    - If one layer drops one information then later layer cannot recover that information. So for 46(lets say) different classes 16-dim layer is limited to learn 46 classes. Hence small layers can act as a bottleneck.
+
+
+### Cross-entropy and Sparse Cross Entropy Loss
+
+    - Cross entropy is for binary labels and cross entropy loss is for integer classes.
+
+### Data Normalization for test data
+
+    - Normalization of test data happens on mean and variance of training data.
+
+### Tip for small training dataset
+
+    - If
