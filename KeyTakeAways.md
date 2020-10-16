@@ -1,3 +1,5 @@
+# Key Take Aways by Deep Learning with Python by Francois Chollet
+
 ## Chapter 1
 
 ### Job of a loss function
