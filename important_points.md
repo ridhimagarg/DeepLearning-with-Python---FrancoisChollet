@@ -93,3 +93,28 @@
 
     - Because of information leakage, we need validation data. while evaluating/optimizing(hyperparameter tuning) our model takes away some information of validation data. Hence, to test over testing data gives us unbiased results without any information leakage.
 
+### Data processing in NN
+
+    - To make learning easier we should follow -:
+
+        => low values (0-1)
+        => homogenous data
+
+    - Why there is a need to feature engineering in DL?
+
+        - helps in solving problem easily.
+        - if you have less training data then creating more useful features helps in learning better model.
+
+### Story of underfitting and overfitting
+
+    - At the begining, optimization and generalization are correlated i.e, lower the loss of training data, lower the loss on the test data. While this is hapening, you model is said to be underfit i.e, your model not yet leant all the relavant patterns.
+    But after certain no. of iterations, generalization stops improving thats where model starts to overfit.
+
+    - To prevent model from learn irrelavant patterns: get more training data to learn relavant patterns.
+
+    - To prevent overfitting: Reducing the number of network's size i.e, no. of neurons, layers. 
+    What happens is -> High size of network then high no. of parameters then high memoization capacity(training data mapping with targets) hence it prevents generalization over new data. So smaller sized network for overfitted model is suggested.
+
+    But there is a fight between <b>too much capacity</b> and <b>not too much capacity</b>
+
+
