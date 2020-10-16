@@ -115,6 +115,6 @@
     - To prevent overfitting: Reducing the number of network's size i.e, no. of neurons, layers. 
     What happens is -> High size of network then high no. of parameters then high memoization capacity(training data mapping with targets) hence it prevents generalization over new data. So smaller sized network for overfitted model is suggested.
 
-    But there is a fight between <b>too much capacity</b> and <b>not too much capacity</b>
+    But there is a fight between **too much capacity** and <b>not too much capacity</b>
 
 
