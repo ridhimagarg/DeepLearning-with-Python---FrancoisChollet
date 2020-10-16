@@ -84,3 +84,12 @@
 ### Tip for small training dataset
 
     - If small no. of training data then we should choose small networks with few layers and neurons to avoid severe overfitting.
+
+## Chapter 4
+
+### Why validation data?
+
+    Can't we test over testing data means just two splits: training data and testing data.
+
+    - Because of information leakage, we need validation data. while evaluating/optimizing(hyperparameter tuning) our model takes away some information of validation data. Hence, to test over testing data gives us unbiased results without any information leakage.
+
