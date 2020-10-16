@@ -117,4 +117,11 @@
 
     But there is a fight between **too much capacity** and <b>not too much capacity</b>
 
+### Optimization and generalization
 
+    - Optimization and generalization is a universal tension. Acheiving a point where both looks okay is difficult task.
+
+### Accuracy lower on test data than validation data
+
+    - It could happen that information leakage is happening at validation data. So in that case we need to use iterate k-fold validation.
+    
