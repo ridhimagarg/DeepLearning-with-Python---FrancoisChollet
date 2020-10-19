@@ -126,4 +126,15 @@
 ### Accuracy lower on test data than validation data
 
     - It could happen that information leakage is happening at validation data. So in that case we need to use iterate k-fold validation.
+
+## Chapter 5
+
+### Difference between dense layer and conv layer
+    
+    - Dense layer learn the global parameters
+    - Conv layer learn the local parameters
+
+### Properries of Convnet
+
+    - Transational Invariant: 
     
