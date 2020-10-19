@@ -154,5 +154,14 @@
 
 ### Max-Pooling Operation
 
-    - 
+    - Role of max pooling is to aggresively downsample feature maps more like strided operation.
+
+    - Why to use max pooling, why do we really need max pooling operation?
+
+        - Suppose we have 3 conv2d layer with kernel size (3,3). So the third convolution layer with 3*3 kernel only contains information from 7*7 input(reduced input coming from above 2 layers). We need the features from the last convolutional layer to contain information about the totality of input.
+
+        - The final feature map has 30k coefficients per sample, its huge. If we will flatten then layer will have 15.8 million params which is too high for a small model and would result in overfitting.
+
+
+        
     
