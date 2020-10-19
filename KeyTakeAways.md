@@ -134,7 +134,25 @@
     - Dense layer learn the global parameters
     - Conv layer learn the local parameters
 
-### Properries of Convnet
+### Properties of Convnet
 
-    - Transational Invariant: 
+    - Transational Invariant: It learns and recognize it anywhere i.e, if it recognizes pattern in the upper-left corne then it will be able to recognize that pattern anywhere. A densely connected layer have to learn anew if location changes.
+    Convnet requires less features.
+
+    - They can learn spatial features: First conv layer some easy patterns like edges, lines. Second layer learns more complex pattern. This is the way convnets easily learn complex patterns.
+
+### Convolution defined by key parameters
+
+    - Size of the patches extracted from the inputs -> it typically ranges from 3*3, 5*5, etc.
+    - Depth of the output feature map -> The no. of filters computed by the convolution.
+
+
+### Convolutional Stride
+
+    - Stride concept is rarely used as it is used to downsample the height and width of the image. 
+    - To downsample the image, instead of stride, max pooling operation is used.
+
+### Max-Pooling Operation
+
+    - 
     
