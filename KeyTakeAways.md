@@ -183,5 +183,17 @@
 
     In this examples -: dictionary of 1000 words will be considered and final output after this embedding operation -: (num_samples, 20, 8) means for every sample will have 20*8 vector each sentence will contain 20 words and each word will be encoded as 8-dim vector.
 
+### RNN
+
+- RNN takes input as (batch_size, timestamps, input_features)
+
+    - input features as suppose text passed to embedding layer then output_dim_word_vector will be the no. of input features for RNN layer.
+
+- RNN doesn't work for long sentences
+
+    - Due to vanishing gradients problem which is similar to non-recurrent networks which are very deep in nature.
+    as you keep on adding layers it will eventually becomes non-trainable.
+    
+
         
     
