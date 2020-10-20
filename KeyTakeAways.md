@@ -161,7 +161,27 @@
         - Suppose we have 3 conv2d layer with kernel size (3,3). So the third convolution layer with 3*3 kernel only contains information from 7*7 input(reduced input coming from above 2 layers). We need the features from the last convolutional layer to contain information about the totality of input.
 
         - The final feature map has 30k coefficients per sample, its huge. If we will flatten then layer will have 15.8 million params which is too high for a small model and would result in overfitting.
+    
+## Chapter 6: Deep Learning for text and sequences
 
+    
+### Use of word embeddings:
+
+ - Embeddings capture the deep structure of words. In enbeddings each word is replaced with some constant dimensional vector computed using special algorithms like skip-grams or cbow.
+
+-  Embedding layer in keras -: It takes major 3 inputs
+
+    Embedding(vocab_size, output_dim_for_word, input_len)
+
+    - vocab_size: how many words/dictionary to be consider for buiding deep vectors
+
+    - output_dim_for_word: eg -: 64 then each word in a sentence will be encoded to 64-dim vector
+
+    - input_len: len of the inputs to be taken if shorter padded with zero and if longer then truncate.
+
+    Eg -: Embedding(1000, 8, 20)
+
+    In this examples -: dictionary of 1000 words will be considered and final output after this embedding operation -: (num_samples, 20, 8) means for every sample will have 20*8 vector each sentence will contain 20 words and each word will be encoded as 8-dim vector.
 
         
     
