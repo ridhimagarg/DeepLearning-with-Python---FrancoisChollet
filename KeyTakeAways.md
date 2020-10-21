@@ -199,6 +199,7 @@
 - RNN dropout
 - Stacking recurrent layers
 - Bidirectional recurrent layers
+- To read -: Recurrent Attention. Sequence masking
 
 
     - RNN dropout
@@ -211,6 +212,22 @@
 
         - Recurrent layer stacking is the classic way to build more powerful recurrent networks.
         - To stack recurrent layers on top of each other in Keras, all intermediate layers should return thier full sequence of of outputs rather than thier output at a timestep which is achieved by `return_sequences=True` in GRU/LSTM layer.
+
+    - Where Bidirectional RNN works better?
+
+        - It will not work where chorological ordering matters like in weather forecasting. 
+
+### Sequence processing with convnets
+
+- How big window size can be used in 1D convnets
+
+    - Unlike 2D convnets we can use big window size such as 10 as we generally used 3*3, 5*5 in 2D convnets. Becuase in 1D we are moving window size i.e, 3 means 3 feature vectors.
+
+    Why convnets works good for images generally?
+
+    - Convnets learns pattern and has no knowledge of temporal ordering
+
+    
 
         
     
