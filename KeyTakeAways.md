@@ -194,6 +194,23 @@
     - Due to vanishing gradients problem which is similar to non-recurrent networks which are very deep in nature.
     as you keep on adding layers it will eventually becomes non-trainable.
     
+### Advance use of RNN
+
+- RNN dropout
+- Stacking recurrent layers
+- Bidirectional recurrent layers
+
+
+    - RNN dropout
+
+        - How to use dropout with RNN -:It has been known that applying dropout before a RNN layer hinders learning instead of dealing with overfitting.
+        So, dropout is applied at every timesteps instead of dropout that varies with timesteps. 
+        Using the same dropout mask at every timesteps allows the network to properly propagate its learning error through time.
+
+    - Stacking recurrent layers
+
+        - Recurrent layer stacking is the classic way to build more powerful recurrent networks.
+        - To stack recurrent layers on top of each other in Keras, all intermediate layers should return thier full sequence of of outputs rather than thier output at a timestep which is achieved by `return_sequences=True` in GRU/LSTM layer.
 
         
     
