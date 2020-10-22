@@ -227,6 +227,23 @@
 
     - Convnets learns pattern and has no knowledge of temporal ordering
 
+## Chapter 7: Keras functional API
+
+### Multi-output models
+
+- How to combine losses of different models
+
+    - Easiest way is to sum them all
+
+    - To combines losses of different scales - assign higher weight to high loss value and less weight to low loss value.
+
+- Inception and Residual models
+
+    - Inception model is built at google
+    - ResNets built at Microsoft
+
+    
+
     
 
         
