@@ -255,9 +255,13 @@
 - It is a python library for hyperparameter optimization which internaly uses parzen estimators to predict which hyperparameters are likely to work well.
 
 
+### What to avoid while performing ensembling
 
+- Avoid same models train again and again while doing ensembling.
 
-    
+- If only difference between your models is the random initialization then your ensemble will be low diversity and provide only tiny improvement over any single model.
+
+- Diveristy is strength for ensembling.
 
         
     
