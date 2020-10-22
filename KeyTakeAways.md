@@ -242,7 +242,20 @@
     - Inception model is built at google
     - ResNets built at Microsoft
 
-    
+### Batch Normalization
+
+- How batch normalization is so effective?
+
+    - It is introduced in 2015. It can adaptively normalize data even as the mean and variance change over time during training. It works by internally maintaining exponential moving average of batch-wise mean and variance of data seen during training.
+
+    - It is generally used after dense and convolutional layer.
+
+### Hyperopt
+
+- It is a python library for hyperparameter optimization which internaly uses parzen estimators to predict which hyperparameters are likely to work well.
+
+
+
 
     
 
